@@ -5,13 +5,15 @@ import dagger.Binds
 import dagger.Module
 import dev.manitos.ghg.GilichiApp
 import dev.manitos.ghg.api.ApiModule
+import dev.manitos.ghg.mvp.GuantesModule
 import dev.manitos.ghg.utilities.SchedulerProvider
 import dev.manitos.ghg.utilities.SchedulerProviderImpl
 
 @Module(
   includes = [
     ApiModule::class,
-    MyProvideModule::class
+    MyProvideModule::class,
+    GuantesModule::class
   ]
 )
 abstract class ApplicationModule {
