@@ -6,6 +6,7 @@ import dagger.Module
 import dev.manitos.ghg.GilichiApp
 import dev.manitos.ghg.api.ApiModule
 import dev.manitos.ghg.mvp.GuantesModule
+import dev.manitos.ghg.redux.OrionModule
 import dev.manitos.ghg.utilities.SchedulerProvider
 import dev.manitos.ghg.utilities.SchedulerProviderImpl
 
@@ -13,7 +14,8 @@ import dev.manitos.ghg.utilities.SchedulerProviderImpl
   includes = [
     ApiModule::class,
     MyProvideModule::class,
-    GuantesModule::class
+    GuantesModule::class,
+    OrionModule::class
   ]
 )
 abstract class ApplicationModule {
