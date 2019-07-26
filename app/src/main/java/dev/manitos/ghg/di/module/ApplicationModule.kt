@@ -5,6 +5,8 @@ import dagger.Binds
 import dagger.Module
 import dev.manitos.ghg.GilichiApp
 import dev.manitos.ghg.api.ApiModule
+import dev.manitos.ghg.utilities.SchedulerProvider
+import dev.manitos.ghg.utilities.SchedulerProviderImpl
 
 @Module(
   includes = [
@@ -16,4 +18,9 @@ abstract class ApplicationModule {
 
   @Binds
   abstract fun bindApplication(app: GilichiApp): Application
+
+  @Binds
+  abstract fun bindSchedulerProvider(
+    schedulerProviderImpl: SchedulerProviderImpl
+  ): SchedulerProvider
 }

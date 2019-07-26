@@ -40,4 +40,9 @@ class MyProvideModule {
       .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
       .build()
   }
+
+  @Provides
+  fun provideCompositeDisposable(): CompositeDisposable {
+    return CompositeDisposable()
+  }
 }
