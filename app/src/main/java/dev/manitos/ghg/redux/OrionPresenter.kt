@@ -4,14 +4,11 @@ import dev.manitos.ghg.interactor.SearchInteractor
 import dev.manitos.ghg.utilities.CatDetail
 import dev.manitos.ghg.utilities.SchedulerProvider
 import io.reactivex.Observable
-import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Inject
 
 class OrionPresenter @Inject constructor(
   private val searchInteractor: SearchInteractor,
-  private val scheduler: SchedulerProvider,
-  private val scheduler2: SchedulerProvider,
-  private val disposable: CompositeDisposable
+  private val scheduler: SchedulerProvider
 ) {
 
   fun present(
