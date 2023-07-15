@@ -1,4 +1,4 @@
 # Pattern Design With Rx And Dagger
-Workshop about of pattern design with dagger and Reactivex for Android in parted to GDG Monterrey
+This is a workshop that I provided as a speaker about pattern design with dagger and Reactivex for Android for GDG Monterrey
 
-[Link to the slide](https://docs.google.com/presentation/d/1d6KQ9xs_zDWz_utiQara4Fnp6ahB6T6-DfFxwBM6lkQ/edit#slide=id.p)
+[Link to my workshop slides](https://docs.google.com/presentation/d/1d6KQ9xs_zDWz_utiQara4Fnp6ahB6T6-DfFxwBM6lkQ/edit#slide=id.p)
